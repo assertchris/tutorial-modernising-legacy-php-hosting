@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 2em;
+    min-width: 320px;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+h2 {
+    padding: 0 0 15px 0;
+    border-bottom: solid 1px #e0e0e0;
+    margin: 0 0 15px 0;
+}
+
+section {
+    margin: 0 0 15px 0;
+}
+
+code, pre {
+    display: block;
+    border: solid 1px #e0e0e0;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0 0 1em 0;
+    overflow: auto;
+    color: #333;
+}
+
+td a {
+    display: block;
+    cursor: pointer;
+}
+
+.table {
+    margin: 0;
+}
+
+.alert, .form-control, .btn, .panel {
+    border-radius: 0;
+}
+
+.pre-line {
+    white-space: pre-line;
+}
