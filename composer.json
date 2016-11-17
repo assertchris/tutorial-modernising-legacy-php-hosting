@@ -1,5 +1,6 @@
 {
     "require": {
-        "composer/composer": "^1.2"
+        "composer/composer": "^1.2",
+        "patchwork/utf8": "^1.3"
     }
 }

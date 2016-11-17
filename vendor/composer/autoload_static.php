@@ -26,6 +26,7 @@ class ComposerStaticInit3877b6a9659eac44c94a197021ddf090
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Patchwork\\' => 10,
         ),
         'J' => 
         array (
@@ -81,6 +82,10 @@ class ComposerStaticInit3877b6a9659eac44c94a197021ddf090
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Patchwork\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/patchwork/utf8/src/Patchwork',
+        ),
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
@@ -103,11 +108,16 @@ class ComposerStaticInit3877b6a9659eac44c94a197021ddf090
         ),
     );
 
+    public static $classMap = array (
+        'Normalizer' => __DIR__ . '/..' . '/patchwork/utf8/src/Normalizer.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit3877b6a9659eac44c94a197021ddf090::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit3877b6a9659eac44c94a197021ddf090::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3877b6a9659eac44c94a197021ddf090::$classMap;
 
         }, null, ClassLoader::class);
     }
